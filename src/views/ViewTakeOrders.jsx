@@ -5,7 +5,6 @@ import { Fragment } from 'react';
 import Menus from '../components/Menus'
 
 function ViewTakeOrders() {
-    
     return (
         <Fragment>
             <HeaderBurger />
