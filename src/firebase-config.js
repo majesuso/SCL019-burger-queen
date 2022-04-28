@@ -21,19 +21,3 @@ const app = initializeApp(firebaseConfig);
 //Inicializa una instancia de Cloud Firestore
 export const db = getFirestore(app);
 
-// // Función para acceder a la data
-// export const readData = async() => { 
-//     const querySnapshot = await getDocs(collection(db, "menus")); //getDocs (traer coleccion "menus" de database (Firestore) )
-//     querySnapshot.forEach((doc) => {
-//       console.log(doc.data());
-//       return (doc.data())
-//     });
-// }
-
-
-// let menuBreakfast = doc.data().breakfast;
-//         console.log(menuBreakfast);
-//         for(let i = 0; i < menuBreakfast.length; ++i){
-//             console.log(menuBreakfast[i].item);
-//             let itemBreakfast = menuBreakfast[i].item;
-//         }
