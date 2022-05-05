@@ -1,18 +1,18 @@
 import HeaderBurger from '../components/Header';
-import CounterComponent from '../components/Counter';
-import ButtonAddItem from '../components/ButtonAddItem';
+// import CounterComponent from '../components/Counter';
+// import ButtonAddItem from '../components/ButtonAddItem';
+import Menus from '../components/waiter/Menus'
+import OrderForm from '../components/waiter/OrderForm'
 import { Fragment } from 'react';
-import Menus from '../components/Menus'
 
 function ViewTakeOrders() {
     return (
         <Fragment>
             <HeaderBurger />
+            <main className = "mainViewTakeOrders">
             <Menus />
-            <div className = "btnsItem">
-                <CounterComponent />
-                <ButtonAddItem />
-            </div>
+            <OrderForm />
+            </main>
         </Fragment>
     )
 

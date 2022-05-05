@@ -51,7 +51,7 @@ export default {
                     price: 7
                 },
                 {
-                    item: 'Bebida/gaseosa 500ml',
+                    item: '',
                     price: 7
                 },
                 {

@@ -1,7 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: green;
+  background-color: black;
+  color: white;
+  font-family: 'Roboto';
 }
 header {
   display: flex;
@@ -20,7 +22,6 @@ header {
 }
 
 .viewSelection {
-  font-family: roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -28,57 +29,149 @@ header {
   width: 25%;
 }
 
-/* contiene todos los botones de cada item */
-.btnsItem {
+.mainViewTakeOrders{
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 20px;
 }
 
-/* contiene botones y contador */
-.counter { 
+.sectionMenus, .sectionOrder{
+  width: 50%;
+}
+
+.sectionOrder{
+  padding: 50px 50px 50px 30px;
+}
+
+.BreakfastMenu, .dayMenu{
+  border-right: 2px solid #E20188;
+  padding: 30px 30px 30px 50px;
+}
+
+.BreakfastMenu{
+  border-bottom: 2px solid #E20188;
+}
+
+.itemMenu{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 40px;
+}
+
+.item{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 60px;
+}
 
-  font-family: roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: white;
+/* contiene todos los botones de cada item */
+.btnsItem {
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-end;
+ align-items: center;
+ gap: 20px;
+}
+
+/* contiene botones y contador */
+.counter { 
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ width: 60px;
+
+ font-family: roboto;
+ font-style: normal;
+ font-weight: 400;
+ font-size: 16px;
+ color: white;
 }
 
 /* clase para boton de add one y remove one  */
 .buttonCounter {
-  padding: 0;
-  width: 17px;
-  height: 17px;
-  background: none;
-  border: none;
+ padding: 0;
+ width: 17px;
+ height: 17px;
+ background: none;
+ border: none;
 
 }
 
 /* iconos de add one y remove one */
 .iconCounter {
-  width: 15px;
-  height: auto;
+ width: 15px;
+ height: auto;
 }
 
 .buttonAddItem {
-  padding: 0;
-  width: 22px;
-  height: 22px;
-  background: none;
-  border: none;
+ padding: 0;
+ width: 22px;
+ height: 22px;
+ background: none;
+ border: none;
 }
 /* icono de add item to cart */
 .iconAddItem {
+ width: 20px;
+ height: auto;
+}
+
+.orderForm{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.inputOrder{
+  display: flex;
+  flex-direction: column;
+}
+
+.labelInputOrder{
+  color: #E20188;
+}
+
+#clientName, #tableNumber{
+  background-color: black;
+  border: 1px solid #E20188;
+  color: white;
+}
+#clientName{
+  width: 200px;
+  height: 20px;
+}
+
+#tableNumber{
+  width: 120px;
+  height: 20px;
+
+}
+
+.btnSendOrder{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 120px;
+  height: 50px;
+  margin-top: 20px;
+  padding: 10px;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  background-color: #E20188;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.iconSendOrder{
   width: 20px;
-  height: auto;
 }
 
 /* .App {
