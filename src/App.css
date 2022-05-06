@@ -14,9 +14,9 @@ header {
   padding: 50px 50px 30px 50px;
   background-color: #E20188;
 }
-
+/* COMPONENTE HEADER */
 .logoHeader{
-  width: 250px;
+  width: 200px;
   height: auto;
   mix-blend-mode: multiply;
 }
@@ -29,6 +29,7 @@ header {
   width: 25%;
 }
 
+/* COMPONENTE VIEW TAKE ORDER */
 .mainViewTakeOrders{
   display: flex;
   flex-direction: row;
@@ -105,7 +106,7 @@ header {
  height: auto;
 }
 
-.buttonAddItem {
+.buttonAddItem, .buttonDeleteItem {
  padding: 0;
  width: 22px;
  height: 22px;
@@ -113,9 +114,14 @@ header {
  border: none;
 }
 /* icono de add item to cart */
-.iconAddItem {
+.iconAddItem{
  width: 20px;
  height: auto;
+}
+
+.iconDeleteItem{
+  width: 15px;
+  height: auto; 
 }
 
 .orderForm{
