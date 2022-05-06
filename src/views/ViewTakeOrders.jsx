@@ -6,6 +6,7 @@ import OrderForm from '../components/waiter/OrderForm'
 import { Fragment, useState } from 'react';
 
 function ViewTakeOrders() {
+
     const [dataOrder, setDataOrder] = useState([]);
     const [formData, setFormtData] = useState({
         clientName: '',
@@ -18,8 +19,16 @@ function ViewTakeOrders() {
         <Fragment>
             <HeaderBurger />
             <main className="mainViewTakeOrders">
-                <Menus updateOrderFunction={setDataOrder} stateDataOrder={dataOrder} />
-                <OrderForm stateDataOrder={dataOrder} clientData={formData} setFormtDataFunction={setFormtData} />
+                <Menus
+                    updateOrderFunction={setDataOrder}
+                    stateDataOrder={dataOrder}
+                />
+
+                <OrderForm
+                    stateDataOrder={dataOrder}
+                    clientData={formData}
+                    setFormtDataFunction={setFormtData}
+                />
             </main>
         </Fragment>
     )

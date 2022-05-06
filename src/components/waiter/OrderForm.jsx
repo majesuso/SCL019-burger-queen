@@ -1,38 +1,38 @@
 import iconKitchen from '../../graphic-resources/icons/kitchen.svg'
 import iconDeleteItem from '../../graphic-resources/icons/iconDeleteItem.svg'
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 
-const OrderForm = ({ stateDataOrder }) => {
+const OrderForm = ({ stateDataOrder, clientData, setFormtDataFunction }) => {
 
-    // const [orderData, setOrderData] = useState({
-    //     clientName: '',
-    //     table: ''
-    // });
-
-    // // función que detecta cambios en el input
-    // const handleInputChange = (event) => {
-
-    //     //console.log(event.target.value);
-    //     setOrderData({
-    //         ...orderData,
-    //         [event.target.name]: event.target.value
-    //     })
-    //     console.log(orderData.clientName + ', mesa: ' + orderData.table);
-    // }
+    // función que detecta cambios en el input
+    const handleInputChange = (event) => {
+        //console.log(event.target.value);
+        setFormtDataFunction({
+            ...clientData,
+            [event.target.name]: event.target.value
+        })
+        console.log(clientData.clientName + ', mesa: ' + clientData.table);
+    }
 
     const addedItems = stateDataOrder.map(function (element) {
         return (
-            <Fragment>
-                <p>
-                    <span>{element.item}</span>
+            <div className="itemAdded" key={element.id}>
+                <span>{element.item}</span>
+                <div className="price_btnDelete">
                     <span>$ {element.price}</span>
-                </p>
-                <button className="buttonDeleteItem">
-                    <img src={iconDeleteItem} alt="borrar item" className="iconDeleteItem" />
-                </button>
-            </Fragment>
+                    <button className="buttonDeleteItem">
+                        <img src={iconDeleteItem} alt="borrar item" className="iconDeleteItem" />
+                    </button>
+                </div>
+            </div>
         )
     });
+
+    // suma total pedio
+    const totalOrder = stateDataOrder.reduce(
+        (total, element) => (total = total + element.price),
+        0
+      );
 
     return (
         <Fragment>
@@ -61,9 +61,12 @@ const OrderForm = ({ stateDataOrder }) => {
                         </label>
                     </div>
                 </form>
-                <div className="itemAdded">
-                    {addedItems}
-                </div>
+                {addedItems}
+                <p>
+                    <span>Total:</span>
+                    <span>$ {totalOrder}</span>
+                </p>
+
                 <button className="btnSendOrder" type="submit">
                     Enviar
                     <img src={iconKitchen} alt="icono cocina" className="iconSendOrder" />

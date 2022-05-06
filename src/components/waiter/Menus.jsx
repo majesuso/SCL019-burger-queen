@@ -23,10 +23,6 @@ const Menus = ({updateOrderFunction, stateDataOrder}) => {
         )
     }, []);
 
-    // const order = dataOrder.map(function (element){
-    //     return ()
-    // })
-
     // console.log(dataBreakfast);
     // console.log(dataBurgers);
 
