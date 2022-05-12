@@ -1,6 +1,7 @@
 import ViewSelection from "./waiter/ViewSelection";
 import logoUno from "../graphic-resources/borrador-logo1.jpeg"
 import logoDos from "../graphic-resources/borrador-logo2.jpeg"
+import './header.css';
 
 function HeaderBurger() {
     // 1. imagen logo

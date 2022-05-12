@@ -1,3 +1,4 @@
+import './orderForm.css'
 import iconKitchen from '../../graphic-resources/icons/kitchen.svg'
 import iconDeleteItem from '../../graphic-resources/icons/iconDeleteItem.svg'
 import { Fragment } from "react";
@@ -6,7 +7,6 @@ const OrderForm = ({ stateDataOrder, clientData, setFormtDataFunction }) => {
 
     // función que detecta cambios en el input
     const handleInputChange = (event) => {
-        //console.log(event.target.value);
         setFormtDataFunction({
             ...clientData,
             [event.target.name]: event.target.value
@@ -14,10 +14,17 @@ const OrderForm = ({ stateDataOrder, clientData, setFormtDataFunction }) => {
         console.log(clientData.clientName + ', mesa: ' + clientData.table);
     }
 
+    const deleteItem = () => {
+
+    }
+
     const addedItems = stateDataOrder.map(function (element) {
         return (
             <div className="itemAdded" key={element.id}>
-                <span>{element.item}</span>
+                <div className="counterOrder">
+                    <span>{element.count}</span>
+                </div>
+                <span className="itemOrder">{element.item}</span>
                 <div className="price_btnDelete">
                     <span>$ {element.price}</span>
                     <button className="buttonDeleteItem">
@@ -30,9 +37,9 @@ const OrderForm = ({ stateDataOrder, clientData, setFormtDataFunction }) => {
 
     // suma total pedio
     const totalOrder = stateDataOrder.reduce(
-        (total, element) => (total = total + element.price),
+        (total, element) => (total = total + element.price * element.count),
         0
-      );
+    );
 
     return (
         <Fragment>

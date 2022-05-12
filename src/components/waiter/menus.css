@@ -1,0 +1,132 @@
+.BreakfastMenu, .dayMenu {
+    border-right: 2px solid #E20188;
+    padding: 30px 30px 30px 50px;
+}
+
+.BreakfastMenu {
+    border-bottom: 2px solid #E20188;
+}
+
+/* titulos "menu desayuno" y "menu dia" */
+.titleMenu {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* secciones menú (hamburguesas,acompañamientos y bebidas) */
+.titleSectionMenu {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    color: #E20188;
+    margin-bottom: 0;
+}
+
+/* columnas proteina y extra */
+.optionsBurger {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+/* contiene titulo (proteína o extra) e inputs radio */
+.proteinsMenu, .extraMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 0px;
+
+}
+
+/* titulos extras y labels inputs */
+.titleOptionsBurger, .optionBurger {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* contiene todos los items por sección */
+.itemsMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+}
+
+/* contiene todos los elementos por item */
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+.nameItem {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    line-height: 20px;
+}
+
+.nameItemBurger {
+    margin-bottom: 0px;
+}
+
+/* contiene todos los botones de cada item */
+.btnsItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+/* contiene botones y contador  */
+.counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60px;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+}
+
+/* clase para boton de add one y remove one  */
+.buttonCounter {
+    padding: 0;
+    width: 17px;
+    height: 17px;
+    background: none;
+    border: none;
+
+}
+
+/* iconos de add one y remove one */
+.iconCounter {
+    width: 15px;
+    height: auto;
+}
+
+/* boton fucsia */
+.buttonAddItem {
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background: none;
+    border: none;
+}
+
+/* icono de add item to cart */
+.iconAddItem {
+    width: 20px;
+    height: auto;
+}

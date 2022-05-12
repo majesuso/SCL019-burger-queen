@@ -1,13 +1,13 @@
 import HeaderBurger from '../components/Header';
-// import CounterComponent from '../components/Counter';
-// import ButtonAddItem from '../components/ButtonAddItem';
 import Menus from '../components/waiter/Menus'
 import OrderForm from '../components/waiter/OrderForm'
 import { Fragment, useState } from 'react';
 
 function ViewTakeOrders() {
 
+    //estado pedido
     const [dataOrder, setDataOrder] = useState([]);
+    //estado datos cliente
     const [formData, setFormtData] = useState({
         clientName: '',
         table: ''
@@ -20,8 +20,8 @@ function ViewTakeOrders() {
             <HeaderBurger />
             <main className="mainViewTakeOrders">
                 <Menus
-                    updateOrderFunction={setDataOrder}
                     stateDataOrder={dataOrder}
+                    updateOrderFunction={setDataOrder}
                 />
 
                 <OrderForm

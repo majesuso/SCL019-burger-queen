@@ -1,0 +1,100 @@
+.sectionOrder {
+    padding: 50px 50px 50px 30px;
+    width: 40%;
+}
+
+/* formulario pedido */
+.orderForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* input formulario */
+.inputOrder {
+    display: flex;
+    flex-direction: column;
+}
+
+.labelInputOrder {
+    color: #E20188;
+}
+
+/* id por inputs */
+#clientName, #tableNumber {
+    background-color: black;
+    border: 1px solid #E20188;
+    color: white;
+}
+
+#clientName {
+    width: 200px;
+    height: 20px;
+}
+
+#tableNumber {
+    width: 75px;
+    height: 20px;
+
+}
+
+/* contiene todas las propiedades del item agregado */
+.itemAdded{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 40px;
+  }
+
+  /* nombre item */
+  .itemOrder{
+    margin-left: 20px;
+  }
+
+  /* contiene precio y boton delete */
+  .price_btnDelete{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+  }
+  
+.buttonDeleteItem {
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background: none;
+    border: none;
+}
+
+.iconDeleteItem {
+    width: 15px;
+    height: auto;
+}
+
+/* boton enviar */
+.btnSendOrder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+    padding: 10px;
+  
+    font-size: 18px;
+    font-weight: 500;
+  
+    background-color: #E20188;
+    color: white;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .iconSendOrder{
+    width: 20px;
+  }
+  
