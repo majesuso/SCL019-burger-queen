@@ -1,23 +1,28 @@
 import './orderForm.css'
 import iconKitchen from '../../graphic-resources/icons/kitchen.svg'
 import iconDeleteItem from '../../graphic-resources/icons/iconDeleteItem.svg'
+import { createCollectionOrders } from '../../firebase-functions';
 import { Fragment } from "react";
 
-const OrderForm = ({ stateDataOrder, clientData, setFormtDataFunction }) => {
+const OrderForm = ({ stateDataOrder, updateOrderFunction, clientData, setFormDataFunction }) => {
 
     // función que detecta cambios en el input
     const handleInputChange = (event) => {
-        setFormtDataFunction({
+        setFormDataFunction({
             ...clientData,
             [event.target.name]: event.target.value
         })
-        console.log(clientData.clientName + ', mesa: ' + clientData.table);
     }
 
-    const deleteItem = () => {
-
+    // Removen un item de la lista
+    const deleteItem = (element) => {
+        const exist = stateDataOrder.find((item) => item.id === element.id);
+        if (exist.count) {
+            updateOrderFunction(stateDataOrder.filter((item) => item.id !== element.id));
+        }
     }
 
+    // estructura html para cada item del pedido
     const addedItems = stateDataOrder.map(function (element) {
         return (
             <div className="itemAdded" key={element.id}>
@@ -27,7 +32,7 @@ const OrderForm = ({ stateDataOrder, clientData, setFormtDataFunction }) => {
                 <span className="itemOrder">{element.item}</span>
                 <div className="price_btnDelete">
                     <span>$ {element.price}</span>
-                    <button className="buttonDeleteItem">
+                    <button onClick={() =>  deleteItem(element)} className="buttonDeleteItem">
                         <img src={iconDeleteItem} alt="borrar item" className="iconDeleteItem" />
                     </button>
                 </div>
@@ -41,6 +46,7 @@ const OrderForm = ({ stateDataOrder, clientData, setFormtDataFunction }) => {
         0
     );
 
+    console.log('name:', clientData.clientName, ', table:', clientData.table, ', order:', stateDataOrder, ', total order:', totalOrder);
     return (
         <Fragment>
             <section className="sectionOrder">
@@ -74,12 +80,17 @@ const OrderForm = ({ stateDataOrder, clientData, setFormtDataFunction }) => {
                     <span>$ {totalOrder}</span>
                 </p>
 
-                <button className="btnSendOrder" type="submit">
+                <button
+                    onClick={()=>console.log(clientData.clientName)}
+                    // onClick={() => createCollectionOrders(clientData.clientName, clientData.table, stateDataOrder, totalOrder)}
+                    className="btnSendOrder"
+                    type="submit"
+                >
                     Enviar
                     <img src={iconKitchen} alt="icono cocina" className="iconSendOrder" />
                 </button>
             </section>
-        </Fragment>
+        </Fragment >
     )
 }
 

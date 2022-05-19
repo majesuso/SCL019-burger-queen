@@ -6,11 +6,26 @@ import iconAddProduct from '../../graphic-resources/icons/addToCart.svg'
 const CounterComponent = ({
     element,
     stateDataOrder,
-    updateOrderFunction }) => {
+    updateOrderFunction,
+    proteinSelected }) => {
 
     const [countItem, setCountItem] = useState(0); // Desestructurar un arreglo
     const addOne = () => { setCountItem(countItem + 1) };
     const removeOne = () => { setCountItem(countItem - 1) };
+    const resetCount = () => {
+        if (countItem > 0) {
+            return setCountItem(countItem - countItem)
+        }
+    }
+
+    // // En caso de seleccionen nuevamente un item que ya fue seleccionado sumar a count
+    // const repeatedItem = (element) => {
+    //     const exist = stateDataOrder.find((item) => item.id === element.id);
+    //     if (exist.count) {
+    //         updateOrderFunction(stateDataOrder.filter((item) => item.id !== element.id));
+    //     }
+    // }
+
 
     return (
         <div className="btnsItem">
@@ -29,7 +44,11 @@ const CounterComponent = ({
                 </button>
             </div>
             <button
-                onClick={() => updateOrderFunction(stateDataOrder.concat({ ...element, count: countItem > 0 ? countItem : 1 }))}
+                onClick={() => {
+                    updateOrderFunction(stateDataOrder.concat({ ...element, proteinSelected, count: countItem > 0 ? countItem : 1 }));
+                    resetCount();
+                }
+                }
                 className="buttonAddItem">
                 <img src={iconAddProduct} alt="añadir item al pedido" className="iconAddItem" />
             </button>

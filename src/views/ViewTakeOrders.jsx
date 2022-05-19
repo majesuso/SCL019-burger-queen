@@ -8,7 +8,7 @@ function ViewTakeOrders() {
     //estado pedido
     const [dataOrder, setDataOrder] = useState([]);
     //estado datos cliente
-    const [formData, setFormtData] = useState({
+    const [formData, setFormData] = useState({
         clientName: '',
         table: ''
     });
@@ -26,8 +26,9 @@ function ViewTakeOrders() {
 
                 <OrderForm
                     stateDataOrder={dataOrder}
+                    updateOrderFunction={setDataOrder}
                     clientData={formData}
-                    setFormtDataFunction={setFormtData}
+                    setFormDataFunction={setFormData}
                 />
             </main>
         </Fragment>

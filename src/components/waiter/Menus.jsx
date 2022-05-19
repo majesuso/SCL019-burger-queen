@@ -57,9 +57,10 @@ const Menus = ({
                         element={element}
                         updateOrderFunction={updateOrderFunction}
                         stateDataOrder={stateDataOrder}
+                        // chosenProtein={proteinSelected}
                     />
                 </div>
-                <div className="optionsBurger">
+                {/* <div className="optionsBurger">
                     <div className="proteinsMenu">
                         <h4 className="titleOptionsBurger">Proteína</h4>
                         {element?.protein?.length && element.protein.map(protein =>
@@ -69,7 +70,7 @@ const Menus = ({
                                 id={protein}
                                 value={protein}
                                 name={element.item}
-                            // onChange={proteinSelected}
+                                //onChange={proteinSelected}
                             />
                             {protein}
                         </label>)
@@ -84,7 +85,7 @@ const Menus = ({
                                 type="radio"
                                 id={extra}
                                 value={extra}
-                                name={element.name}
+                                name={element.id}
                             // onChange={extraSelected}
                             />
                             {extra}
@@ -92,7 +93,7 @@ const Menus = ({
                         )}
 
                     </div>
-                </div>
+                </div> */}
             </Fragment>
         )
     });
