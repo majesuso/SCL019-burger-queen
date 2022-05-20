@@ -96,5 +96,25 @@
 
   .iconSendOrder{
     width: 20px;
+    height: auto;
+  }
+
+  .divEmptyCart{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
   }
   
+  .emptyCart{
+    font-size: 18px;
+    font-weight: 500;
+    color:#E20188
+
+  }
+
+  .iconEmptyCart{
+      width: 35px;
+      height: auto;
+  }

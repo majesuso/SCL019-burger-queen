@@ -1,7 +1,8 @@
 import './orderForm.css'
 import iconKitchen from '../../graphic-resources/icons/kitchen.svg'
 import iconDeleteItem from '../../graphic-resources/icons/iconDeleteItem.svg'
-import { createCollectionOrders } from '../../firebase-functions';
+import iconEmptyCart from '../../graphic-resources/icons/iconEmptyCart.svg'
+// import { createCollectionOrders } from '../../firebase-functions';
 import { Fragment } from "react";
 
 // import { db } from "../../firebase-config";
@@ -50,6 +51,12 @@ const OrderForm = ({ stateDataOrder, updateOrderFunction, clientData, setFormDat
         0
     );
 
+    // resetea input al momento de enviar el pedido
+    const resetInput = () => {
+        document.getElementById("clientName").value = "";
+        document.getElementById("tableNumber").value = "";
+    }
+
     // const userCollectionRef = collection(db, "pedidos");
 
     // const createCollectionOrder = async () => {
@@ -92,6 +99,7 @@ const OrderForm = ({ stateDataOrder, updateOrderFunction, clientData, setFormDat
                         </label>
                     </div>
                 </form>
+                <div>{stateDataOrder.length === 0 && <div className="divEmptyCart"><img src={iconEmptyCart} alt="icono carrito vacío" className="iconEmptyCart" /><p className="emptyCart">Tu pedido está vacío</p></div>}</div>
                 {addedItems}
                 <p>
                     <span>Total:</span>
@@ -101,8 +109,9 @@ const OrderForm = ({ stateDataOrder, updateOrderFunction, clientData, setFormDat
                 <button
                     //onClick={()=>console.log(clientData.clientName)}
                     //onClick={()=>createCollectionOrder()}
-                    onClick={()=>{
+                    onClick={() => {
                         updateOrderFunction([]);
+                        resetInput();
                     }
                     }
                     //onClick={() => createCollectionOrders(clientData.clientName, clientData.table, stateDataOrder, totalOrder)}

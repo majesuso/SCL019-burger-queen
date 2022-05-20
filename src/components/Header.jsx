@@ -1,4 +1,3 @@
-import ViewSelection from "./ViewSelection";
 import iconTakeOrder from '../graphic-resources/icons/takeOrder.svg'
 import iconKitchen from '../graphic-resources/icons/kitchen.svg'
 // import iconOrdersReady from '../graphic-resources/icons/ordersReady.svg'
