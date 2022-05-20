@@ -1,23 +1,48 @@
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    padding: 50px 50px 30px 50px;
-    background-color: #E20188;
-  }
-  /* COMPONENTE HEADER */
-  .logoHeader{
-    width: 350px;
-    height: auto;
-  }
-  
-  .viewSelection {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-  
-    width: 25%;
-  }
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 50px 50px 30px 50px;
+  background-color: #E20188;
+}
+
+.navHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* COMPONENTE HEADER */
+.logoHeader {
+  width: 350px;
+  height: auto;
+}
+
+.btn-takeOrders, .btn-kitchen{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 16px;
+  color: white;
+
+  background: none;
+  border: none;
+
+}
+
+.iconNavTakeOrder{
+  width: 22px;
+  height: auto;
+}
+
+.iconNavKitchen{
+  width: 20px;
+  height: auto;
+}
