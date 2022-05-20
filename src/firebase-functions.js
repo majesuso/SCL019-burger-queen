@@ -10,7 +10,10 @@ export const readData = async () => {
 }
 
 export const createCollectionOrders = async (client, table, stateOrder, totalValue) => {
-    console.log(client);
+    // console.log(client);
+    // console.log(table);
+    // console.log(stateOrder);
+    // console.log(totalValue);
     await addDoc(collection(db, "orders"), {
         // id: docRef.id,
         client: client,
@@ -20,3 +23,27 @@ export const createCollectionOrders = async (client, table, stateOrder, totalVal
     });
 }
 
+// import { useState } from "react";
+// import { db } from "../firebase/firebase-config";
+// import {collection, addDoc, Timestamp } from "firebase/firestore";
+
+// const CartBreakfast = (props) => {
+//   const { cartItems, onAdd, onRemove } = props;
+//   console.log(cartItems);
+//   const [newName, setNewName] = useState("");
+//   const userCollectionRef = collection(db, "orders");
+
+//   const itemsPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0);
+  
+//   const totalPrice = itemsPrice;
+
+//   const createOrder = async () => {
+//     console.log("creado")
+//     await addDoc(userCollectionRef, {
+//       Customer: newName, 
+//       Order: cartItems, 
+//       status:"Pending",
+//       created: Timestamp.fromDate(new Date()),
+//     });
+//     console.log()
+//   }

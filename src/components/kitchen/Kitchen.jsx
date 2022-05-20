@@ -24,3 +24,5 @@ const Kitchen = () => {
         </Fragment>
     )
 }
+
+export default Kitchen;

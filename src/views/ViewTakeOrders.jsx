@@ -13,7 +13,7 @@ function ViewTakeOrders() {
         table: ''
     });
 
-    console.log(dataOrder);
+    //console.log(dataOrder);
 
     return (
         <Fragment>

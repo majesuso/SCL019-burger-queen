@@ -4,6 +4,10 @@ import iconDeleteItem from '../../graphic-resources/icons/iconDeleteItem.svg'
 import { createCollectionOrders } from '../../firebase-functions';
 import { Fragment } from "react";
 
+// import { db } from "../../firebase-config";
+// import { collection, addDoc, Timestamp } from "firebase/firestore";
+
+
 const OrderForm = ({ stateDataOrder, updateOrderFunction, clientData, setFormDataFunction }) => {
 
     // función que detecta cambios en el input
@@ -32,7 +36,7 @@ const OrderForm = ({ stateDataOrder, updateOrderFunction, clientData, setFormDat
                 <span className="itemOrder">{element.item}</span>
                 <div className="price_btnDelete">
                     <span>$ {element.price}</span>
-                    <button onClick={() =>  deleteItem(element)} className="buttonDeleteItem">
+                    <button onClick={() => deleteItem(element)} className="buttonDeleteItem">
                         <img src={iconDeleteItem} alt="borrar item" className="iconDeleteItem" />
                     </button>
                 </div>
@@ -46,7 +50,21 @@ const OrderForm = ({ stateDataOrder, updateOrderFunction, clientData, setFormDat
         0
     );
 
-    console.log('name:', clientData.clientName, ', table:', clientData.table, ', order:', stateDataOrder, ', total order:', totalOrder);
+    // const userCollectionRef = collection(db, "pedidos");
+
+    // const createCollectionOrder = async () => {
+    //     console.log("creado")
+    //     await addDoc(userCollectionRef, {
+    //         client: clientData.clientName,
+    //         table: clientData.table,
+    //         order: stateDataOrder,
+    //         totalValue: totalOrder,    
+    //         created: Timestamp.fromDate(new Date()),
+    //     });
+    //     console.log()
+    // }
+
+    //console.log('name:', clientData.clientName, ', table:', clientData.table, ', order:', stateDataOrder, ', total order:', totalOrder);
     return (
         <Fragment>
             <section className="sectionOrder">
@@ -81,8 +99,13 @@ const OrderForm = ({ stateDataOrder, updateOrderFunction, clientData, setFormDat
                 </p>
 
                 <button
-                    onClick={()=>console.log(clientData.clientName)}
-                    // onClick={() => createCollectionOrders(clientData.clientName, clientData.table, stateDataOrder, totalOrder)}
+                    //onClick={()=>console.log(clientData.clientName)}
+                    //onClick={()=>createCollectionOrder()}
+                    onClick={()=>{
+                        updateOrderFunction([]);
+                    }
+                    }
+                    //onClick={() => createCollectionOrders(clientData.clientName, clientData.table, stateDataOrder, totalOrder)}
                     className="btnSendOrder"
                     type="submit"
                 >
