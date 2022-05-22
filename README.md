@@ -8,7 +8,7 @@ Burger Queen es un aplicación pensada para un restaurante de comida rápida.
 
 Esta busca optimizar los procesos de atención al cliente, tanto en la toma de pedido como en la cocina. 
 
-Permitiendo al mesero tomar un pedido de manera mucho más rápida y efectiva y que con un simple botón pueda enviar la orden a la cocina, y este será preparado a tiempo.
+Permitiendo al mesero tomar un pedido de manera mucho más rápida y efectiva y que con un simple botón pueda enviar la orden a la cocina, y este sea preparado a tiempo.
 
 Esta aplicación posee características técnicas como ser Single Page Application (SPA), manejar una base de datos con Firebase y Firestore; y también utilizar el framework de React y React Router. 
 
@@ -30,7 +30,7 @@ a la cocina para que se preparen ordenada y eficientemente
 El restaurant consta de dos menús: uno para el desayuno y otro menú para el resto del día.
 
 ### HU 1
-**Mesero debe poder tomar pedido del cliente**
+#### **Mesero debe poder tomar pedido del cliente**
 
 Yo como mesero quiero tomar el pedido de un cliente, saber cuánto cobrar, y enviarlo a la cocina para evitar errores y que se puedan ir preparando en orden.
 
@@ -44,3 +44,39 @@ Yo como mesero quiero tomar el pedido de un cliente, saber cuánto cobrar, y env
 - Ver resumen y el total de la compra.
 - Enviar pedido a cocina (guardar en alguna base de datos).
 - Se ve y funciona bien en una tablet
+
+#### **Prototipos**
+
+<img src="src/graphic-resources/imagesReadme/HU1prototipo2.png" width="50%">
+<img src="src/graphic-resources/imagesReadme/HU1prototipoBajaFidelidad.png" width="50%" align = "right">
+<img src="src/graphic-resources/imagesReadme/HU1BlancoyNegro.png" width="50%">
+<img src="src/graphic-resources/imagesReadme/HU1naranjo.png" width="50%" align = "right">
+<img src="src/graphic-resources/imagesReadme/HU1magenta.png" width="100%">
+
+### HU2
+#### 👩🏻‍🍳  **Jefe de cocina debe ver los pedidos**
+
+Yo como jefe de cocina quiero ver los pedidos de los clientes en orden y marcar cuáles están listos para saber qué se debe cocinar.
+
+**Criterios de Aceptación:**
+
+- Ver los pedidos ordenados según se van haciendo.
+- Marcar los pedidos que se han preparado y están listos para servirse.
+
+#### **Prototipos**
+
+<img src="src/graphic-resources/imagesReadme/HU2prototipoBajaFidelidad.jpeg" width="50%">
+<img src="src/graphic-resources/imagesReadme/HU2.png" width="100%">
+
+### Tecnologías
+
+![Icono JavaScript](https://img.icons8.com/color/40/ffffff/javascript--v1.png "JavaScript")
+![Icono React](https://img.icons8.com/color/40/000000/react-native.png "React")
+![Icono Firebase](https://img.icons8.com/color/40/ffffff/firebase.png "Firebase")
+![Icono CSS](https://img.icons8.com/color/40/ffffff/css3.png "CSS")
+![Icono Git](https://img.icons8.com/color/40/ffffff/git.png "Git")
+![Icono GitHub](https://img.icons8.com/ios-glyphs/40/ffffff/github.png "GitHub")
+![Icono Visual Studio Code](https://img.icons8.com/color/40/ffffff/visual-studio-code-2019.png "Visual Studio Code")
+![Icono Figma](https://img.icons8.com/color/40/ffffff/figma--v1.png "Figma")
+
+Palabras clave: JavaScript, React, Firebase, CSS, Git, GitHub, Visual Studio Code, Figma.
