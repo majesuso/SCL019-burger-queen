@@ -1,4 +1,4 @@
-<img src="src/graphic-resources/imagesReadme/logoBQ.png" height="60%">
+<img src="src/graphic-resources/imagesReadme/logoBQ.png" height="70%">
 
 ***
 
@@ -17,9 +17,9 @@ Esta aplicación posee características técnicas como ser Single Page Applicati
 ## Índice
 
 * [1. Historias de Usuario](#1-historias-de-usuario)
-  * [1.1 HU 1](#2.1-hu1)
-  * [1.2 HU 2](#2.2-hu2)
-* [2. Tecnologías](#3-tecnologias)
+  * [1.1 HU 1](#1.1-hu1)
+  * [1.2 HU 2](#1.2-hu2)
+* [2. Tecnologías](#1-tecnologías)
 
 ## Historias de Usuario
 
