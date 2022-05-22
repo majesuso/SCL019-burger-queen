@@ -1,4 +1,4 @@
-<img src="src/graphic-resources/imagesReadme/logoBQ.png" height="60%">
+<img src="src/graphic-resources/imagesReadme/logoBQ.png" height="80%">
 
 ***
 
@@ -18,9 +18,9 @@ Esta aplicación posee características técnicas como ser Single Page Applicati
 ## Índice
 
 * [1. Historias de Usuario](#1-historias-de-usuario)
-  * [1.1 HU 1](#2.1-hu1)
-  * [1.2 HU 2](#2.2-hu2)
-* [2. Tecnologías](#3-tecnologias)
+  * [1.1 HU 1](#1.1-hu1)
+  * [1.2 HU 2](#1.2-hu2)
+* [2. Tecnologías](#1-tecnologías)
 
 ## Historias de Usuario
 
@@ -46,17 +46,13 @@ Yo como mesero quiero tomar el pedido de un cliente, saber cuánto cobrar, y env
 - Enviar pedido a cocina (guardar en alguna base de datos).
 - Se ve y funciona bien en una tablet
 
-#### **Prototipos baja fidelidad**
+#### **Prototipos**
 
 
-<img src="src/graphic-resources/imagesReadme/HU1prototipo2.png" width="50%" align = "left">
-<img src="src/graphic-resources/imagesReadme/HU1prototipoBajaFidelidad.png" width="50%" align = "right">
-
-#### **Prototipos alta fidelidad**
-<img src="src/graphic-resources/imagesReadme/HU1BlancoyNegro.png" width="50%" align = "left">
-<img src="src/graphic-resources/imagesReadme/HU1naranjo.png" width="50%" align = "right">
-
-#### **Prototipo final**
+<img src="src/graphic-resources/imagesReadme/HU1prototipo2.png" width="45%" align = "left">
+<img src="src/graphic-resources/imagesReadme/HU1prototipoBajaFidelidad.png" width="45%">
+<img src="src/graphic-resources/imagesReadme/HU1BlancoyNegro.png" width="45%" align = "left">
+<img src="src/graphic-resources/imagesReadme/HU1naranjo.png" width="45%">
 <img src="src/graphic-resources/imagesReadme/HU1magenta.png" width="100%">
 
 ### HU2
