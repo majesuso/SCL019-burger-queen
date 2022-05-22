@@ -45,13 +45,13 @@ Yo como mesero quiero tomar el pedido de un cliente, saber cuánto cobrar, y env
 - Enviar pedido a cocina (guardar en alguna base de datos).
 - Se ve y funciona bien en una tablet
 
-#### **Prototipos baja fidelidad**
+#### **Prototipos**
 
 
 <img src="src/graphic-resources/imagesReadme/HU1prototipo2.png" width="45%" align = "left">
-<img src="src/graphic-resources/imagesReadme/HU1prototipoBajaFidelidad.png" width="45%" align = "right">
+<img src="src/graphic-resources/imagesReadme/HU1prototipoBajaFidelidad.png" width="45%">
 <img src="src/graphic-resources/imagesReadme/HU1BlancoyNegro.png" width="45%" align = "left">
-<img src="src/graphic-resources/imagesReadme/HU1naranjo.png" width="45%" align = "right">
+<img src="src/graphic-resources/imagesReadme/HU1naranjo.png" width="45%">
 <img src="src/graphic-resources/imagesReadme/HU1magenta.png" width="100%">
 
 ### HU2
