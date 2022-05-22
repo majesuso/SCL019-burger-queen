@@ -45,16 +45,21 @@ Yo como mesero quiero tomar el pedido de un cliente, saber cuánto cobrar, y env
 - Enviar pedido a cocina (guardar en alguna base de datos).
 - Se ve y funciona bien en una tablet
 
-#### **Prototipos**
+#### **Prototipos baja fidelidad**
 
-<img src="src/graphic-resources/imagesReadme/HU1prototipo2.png" width="50%">
+
+<img src="src/graphic-resources/imagesReadme/HU1prototipo2.png" width="50%" align = "left">
 <img src="src/graphic-resources/imagesReadme/HU1prototipoBajaFidelidad.png" width="50%" align = "right">
-<img src="src/graphic-resources/imagesReadme/HU1BlancoyNegro.png" width="50%">
+
+#### **Prototipos alta fidelidad**
+<img src="src/graphic-resources/imagesReadme/HU1BlancoyNegro.png" width="50%" align = "left">
 <img src="src/graphic-resources/imagesReadme/HU1naranjo.png" width="50%" align = "right">
+
+#### **Prototipo final**
 <img src="src/graphic-resources/imagesReadme/HU1magenta.png" width="100%">
 
 ### HU2
-#### 👩🏻‍🍳  **Jefe de cocina debe ver los pedidos**
+#### **Jefe de cocina debe ver los pedidos**
 
 Yo como jefe de cocina quiero ver los pedidos de los clientes en orden y marcar cuáles están listos para saber qué se debe cocinar.
 
