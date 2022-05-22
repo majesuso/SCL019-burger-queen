@@ -1,4 +1,4 @@
-<img src="src/graphic-resources/imagesReadme/logoBQ.png" height="70%">
+<img src="src/graphic-resources/imagesReadme/logoBQ.png" height="80%">
 
 ***
 
