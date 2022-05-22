@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+<img src="src/graphic-resources/imagesReadme/logoBQ.png" height="60%">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+***
 
-## Available Scripts
+<!-- [Ingresa a Burger Queen](src/index.html) -->
 
-In the project directory, you can run:
+Burger Queen es un aplicación pensada para un restaurante de comida rápida. 
 
-### `npm start`
+Esta busca optimizar los procesos de atención al cliente, tanto en la toma de pedido como en la cocina. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Permitiendo al mesero tomar un pedido de manera mucho más rápida y efectiva y que con un simple botón pueda enviar la orden a la cocina, y este será preparado a tiempo.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Esta aplicación posee características técnicas como ser Single Page Application (SPA), manejar una base de datos con Firebase y Firestore; y también utilizar el framework de React y React Router. 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Índice
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* [1. Historias de Usuario](#1-historias-de-usuario)
+  * [1.1 HU 1](#2.1-hu1)
+  * [1.2 HU 2](#2.2-hu2)
+* [2. Tecnologías](#3-tecnologias)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Historias de Usuario
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Un pequeño restaurante de hamburguesas, que está creciendo, necesita una interfaz en la que puedan tomar pedidos usando una _tablet_, y enviarlos
+a la cocina para que se preparen ordenada y eficientemente
 
-### `npm run eject`
+<!-- Burger Queen es una cadena de comida rápida que está abierta las 24hrs, y para que puedan seguir creciendo necesita un sistema que ayude a sus meseros a la hora de tomar los pedidos de sus clientes, mediante una tablet. -->
+El restaurant consta de dos menús: uno para el desayuno y otro menú para el resto del día.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### HU 1
+**Mesero debe poder tomar pedido del cliente**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Yo como mesero quiero tomar el pedido de un cliente, saber cuánto cobrar, y enviarlo a la cocina para evitar errores y que se puedan ir preparando en orden.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Criterios de Aceptación:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Visualizar ambos menús
+- Anotar nombre de cliente.
+- Agregar número de mesa
+- Agregar productos al pedido.
+- Eliminar productos.
+- Ver resumen y el total de la compra.
+- Enviar pedido a cocina (guardar en alguna base de datos).
+- Se ve y funciona bien en una tablet

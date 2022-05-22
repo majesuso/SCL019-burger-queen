@@ -1,0 +1,74 @@
+.ordersKit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin: 50px;
+}
+.orderKit{
+    width: 40%;
+    height: auto;
+    background-color: #E20188;
+    padding: 20px;
+}
+
+.clientDataKit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.tableContainerKit{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.clientKit, .numberTableKit{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.textTableKit{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.elementsOrderKit{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin-top: 20px;
+}
+.itemsOrderKit{
+    display: flex;
+    flex-direction: column;
+}
+
+.itemKitchen{
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.btnOrderReady{
+    width: 120px;
+    height: 50px;
+    padding: auto;
+    align-self: flex-end;
+
+    font-size: 18px;
+    font-weight: 600;
+  
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+
+}

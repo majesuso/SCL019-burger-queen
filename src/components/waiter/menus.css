@@ -56,7 +56,7 @@
 }
 
 /* contiene todos los elementos por item */
-.item {
+.itemMenu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

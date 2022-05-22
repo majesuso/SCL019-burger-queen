@@ -16,6 +16,10 @@ header {
   gap: 20px;
 }
 
+.linkRouter{
+  text-decoration: none;
+}
+
 /* COMPONENTE HEADER */
 .logoHeader {
   width: 350px;

@@ -101,8 +101,8 @@ const OrderForm = ({ stateDataOrder, updateOrderFunction, clientData, setFormDat
                 </form>
                 <div>{stateDataOrder.length === 0 && <div className="divEmptyCart"><img src={iconEmptyCart} alt="icono carrito vacío" className="iconEmptyCart" /><p className="emptyCart">Tu pedido está vacío</p></div>}</div>
                 {addedItems}
-                <p>
-                    <span>Total:</span>
+                <p className="totalPrice">
+                    <span>Total: </span>
                     <span>$ {totalOrder}</span>
                 </p>
 
@@ -119,7 +119,7 @@ const OrderForm = ({ stateDataOrder, updateOrderFunction, clientData, setFormDat
                     type="submit"
                 >
                     Enviar
-                    <img src={iconKitchen} alt="icono cocina" className="iconSendOrder" />
+                    {/* <img src={iconKitchen} alt="icono cocina" className="iconSendOrder" /> */}
                 </button>
             </section>
         </Fragment >

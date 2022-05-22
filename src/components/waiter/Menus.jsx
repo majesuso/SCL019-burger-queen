@@ -28,7 +28,7 @@ const Menus = ({
     // mostando cada item del menú desayuno
     const ItemBreakfast = dataBreakfast.map(function (element) {
         return (
-            <div key={element.id} className="item">
+            <div key={element.id} className="itemMenu">
                 <li className="nameItem">{element.item}</li>
                 <CounterComponent
                     element={element}
@@ -51,7 +51,7 @@ const Menus = ({
 
         return (
             <Fragment>
-                <div key={element.id} className="item">
+                <div key={element.id} className="itemMenu">
                     <li className="nameItem nameItemBurger">{element.item}</li>
                     <CounterComponent
                         element={element}
@@ -101,7 +101,7 @@ const Menus = ({
     // mostando cada item de la sección acompañamientos
     const ItemSnacks = dataSnacks.map(function (element) {
         return (
-            <div key={element.id} className="item">
+            <div key={element.id} className="itemMenu">
                 <li className="nameItem">{element.item}</li>
                 <CounterComponent
                     element={element}
@@ -115,7 +115,7 @@ const Menus = ({
     // mostando cada item de la sección bebidas
     const ItemDrinks = dataDrinks.map(function (element) {
         return (
-            <div key={element.id} className="item">
+            <div key={element.id} className="itemMenu">
                 <li className="nameItem">{element.item}</li>
                 <CounterComponent
                     element={element}

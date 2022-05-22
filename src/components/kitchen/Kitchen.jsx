@@ -1,3 +1,4 @@
+import './kitchen.css'
 import { Fragment } from "react";
 import HeaderBurger from '../Header';
 
@@ -5,22 +6,54 @@ const Kitchen = () => {
     return (
         <Fragment>
             <HeaderBurger />
-            <main>
-                <div>
-                    <p>Nombre Cliente</p>
-                    <div>
-                        <p>mesa</p>
-                        <p>100</p>
+            <div className="ordersKit">
+                <div className="orderKit" >
+                    <div className="clientDataKit" >
+                        <p className="clientKit" >Nombre Cliente</p>
+                        <div className="tableContainerKit" >
+                            <p className="textTableKit" >mesa</p>
+                            <p className="numberTableKit" >100</p>
+                        </div>
+                    </div>
+                    <div className="elementsOrderKit" >
+                        <div className="itemsOrderKit" >
+                            <div className="itemKitchen" >
+                                <span>10</span>
+                                <span>Hamburguesa simple</span>
+                            </div>
+                            <div className="itemKitchen" >
+                                <span>10</span>
+                                <span>Hamburguesa simple</span>
+                            </div>
+                        </div>
+                        <button className="btnOrderReady" >Listo</button>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <span>1</span>
-                        <span>item</span>
+
+                {/* duplicado de prueba*/}
+                <div className="orderKit" >
+                    <div className="clientDataKit" >
+                        <p className="clientKit" >Nombre Cliente</p>
+                        <div className="tableContainerKit" >
+                            <p className="textTableKit" >mesa</p>
+                            <p className="numberTableKit" >100</p>
+                        </div>
                     </div>
-                    <button>Listo</button>
+                    <div className="elementsOrderKit" >
+                        <div className="itemsOrderKit" >
+                            <div className="itemKitchen" >
+                                <span>10</span>
+                                <span>Hamburguesa simple</span>
+                            </div>
+                            <div className="itemKitchen" >
+                                <span>10</span>
+                                <span>Hamburguesa simple</span>
+                            </div>
+                        </div>
+                        <button className="btnOrderReady" >Listo</button>
+                    </div>
                 </div>
-            </main>
+            </div>
         </Fragment>
     )
 }
