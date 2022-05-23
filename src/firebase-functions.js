@@ -4,9 +4,6 @@ import {
     getDocs,
     addDoc,
     Timestamp,
-    // onSnapshot,
-    // query,
-    // orderBy
 } from "firebase/firestore";
 
 
@@ -26,13 +23,3 @@ export const createCollectionOrders = async (client, table, stateOrder, totalVal
         created: Timestamp.fromDate(new Date())
     });
 }
-
-// export const readDataOrders = async () => {
-//     const ordersCollection = collection(db, "orders");
-//     const q = query(ordersCollection, orderBy("date", "desc"));
-//     const getOrders = await onSnapshot(q, (snapshot) =>
-//         (snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
-//     );
-//     console.log(getOrders);
-//     return getOrders;
-// }
