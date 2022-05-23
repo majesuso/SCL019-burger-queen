@@ -5,10 +5,6 @@ import iconEmptyCart from '../../graphic-resources/icons/iconEmptyCart.svg'
 import { createCollectionOrders } from '../../firebase-functions';
 import { Fragment } from "react";
 
-// import { db } from "../../firebase-config";
-// import { collection, addDoc, Timestamp } from "firebase/firestore";
-
-
 const OrderForm = ({ stateDataOrder, updateOrderFunction, clientData, setFormDataFunction }) => {
 
     // función que detecta cambios en el input
@@ -57,21 +53,6 @@ const OrderForm = ({ stateDataOrder, updateOrderFunction, clientData, setFormDat
         document.getElementById("tableNumber").value = "";
     }
 
-    // const userCollectionRef = collection(db, "pedidos");
-
-    // const createCollectionOrder = async () => {
-    //     console.log("creado")
-    //     await addDoc(userCollectionRef, {
-    //         client: clientData.clientName,
-    //         table: clientData.table,
-    //         order: stateDataOrder,
-    //         totalValue: totalOrder,    
-    //         created: Timestamp.fromDate(new Date()),
-    //     });
-    //     console.log()
-    // }
-
-    //console.log('name:', clientData.clientName, ', table:', clientData.table, ', order:', stateDataOrder, ', total order:', totalOrder);
     return (
         <Fragment>
             <section className="sectionOrder">
@@ -107,14 +88,11 @@ const OrderForm = ({ stateDataOrder, updateOrderFunction, clientData, setFormDat
                 </p>
 
                 <button
-                    //onClick={()=>console.log(clientData.clientName)}
-                    //onClick={()=>createCollectionOrder()}
-                    // onClick={() => {
-                    //     updateOrderFunction([]);
-                    //     resetInput();
-                    // }
-                    // }
-                    onClick={async () => await createCollectionOrders(clientData.clientName, clientData.table, stateDataOrder, totalOrder)}
+                    onClick={async () => {
+                        updateOrderFunction([]);
+                        resetInput();
+                        await createCollectionOrders(clientData.clientName, clientData.table, stateDataOrder, totalOrder)
+                    }}
                     className="btnSendOrder"
                     type="submit"
                 >

@@ -1,5 +1,13 @@
 import { db } from './firebase-config';
-import { collection, getDocs, addDoc } from "firebase/firestore";
+import {
+    collection,
+    getDocs,
+    addDoc,
+    Timestamp,
+    // onSnapshot,
+    // query,
+    // orderBy
+} from "firebase/firestore";
 
 
 // Función para acceder a la data
@@ -11,11 +19,20 @@ export const readData = async () => {
 
 export const createCollectionOrders = async (client, table, stateOrder, totalValue) => {
     await addDoc(collection(db, "orders"), {
-        // id: docRef.id,
         client: client,
         table: table,
         order: stateOrder,
-        totalValue: totalValue
+        totalValue: totalValue,
+        created: Timestamp.fromDate(new Date())
     });
 }
 
+// export const readDataOrders = async () => {
+//     const ordersCollection = collection(db, "orders");
+//     const q = query(ordersCollection, orderBy("date", "desc"));
+//     const getOrders = await onSnapshot(q, (snapshot) =>
+//         (snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+//     );
+//     console.log(getOrders);
+//     return getOrders;
+// }
