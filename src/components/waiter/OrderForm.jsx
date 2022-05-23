@@ -1,5 +1,5 @@
 import './orderForm.css'
-import iconKitchen from '../../graphic-resources/icons/kitchen.svg'
+//import iconKitchen from '../../graphic-resources/icons/kitchen.svg'
 import iconDeleteItem from '../../graphic-resources/icons/iconDeleteItem.svg'
 import iconEmptyCart from '../../graphic-resources/icons/iconEmptyCart.svg'
 // import { createCollectionOrders } from '../../firebase-functions';
