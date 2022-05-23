@@ -45,7 +45,7 @@ const CounterComponent = ({
             </div>
             <button
                 onClick={() => {
-                    updateOrderFunction(stateDataOrder.concat({ ...element, proteinSelected, count: countItem > 0 ? countItem : 1 }));
+                    updateOrderFunction(stateDataOrder.concat({ ...element, proteinSelected: proteinSelected || null, count: countItem > 0 ? countItem : 1 }));
                     resetCount();
                 }
                 }

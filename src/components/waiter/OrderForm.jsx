@@ -2,7 +2,7 @@ import './orderForm.css'
 //import iconKitchen from '../../graphic-resources/icons/kitchen.svg'
 import iconDeleteItem from '../../graphic-resources/icons/iconDeleteItem.svg'
 import iconEmptyCart from '../../graphic-resources/icons/iconEmptyCart.svg'
-// import { createCollectionOrders } from '../../firebase-functions';
+import { createCollectionOrders } from '../../firebase-functions';
 import { Fragment } from "react";
 
 // import { db } from "../../firebase-config";
@@ -109,12 +109,12 @@ const OrderForm = ({ stateDataOrder, updateOrderFunction, clientData, setFormDat
                 <button
                     //onClick={()=>console.log(clientData.clientName)}
                     //onClick={()=>createCollectionOrder()}
-                    onClick={() => {
-                        updateOrderFunction([]);
-                        resetInput();
-                    }
-                    }
-                    //onClick={() => createCollectionOrders(clientData.clientName, clientData.table, stateDataOrder, totalOrder)}
+                    // onClick={() => {
+                    //     updateOrderFunction([]);
+                    //     resetInput();
+                    // }
+                    // }
+                    onClick={async () => await createCollectionOrders(clientData.clientName, clientData.table, stateDataOrder, totalOrder)}
                     className="btnSendOrder"
                     type="submit"
                 >
