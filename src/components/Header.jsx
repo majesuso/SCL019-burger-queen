@@ -13,7 +13,7 @@ function HeaderBurger() {
     //     // y viceversa
     // }
     return (
-        <header>
+        <header className="headerBQ">
             <div>
                 <img src={logoBurgerQueen} alt="Logo Burger Queen" className="logoHeader" />
             </div>

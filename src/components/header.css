@@ -1,4 +1,4 @@
-header {
+.headerBQ {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -6,6 +6,7 @@ header {
   margin: 0;
   padding: 50px 50px 30px 50px;
   background-color: #E20188;
+  width: 100vh;
 }
 
 .navHeader{
