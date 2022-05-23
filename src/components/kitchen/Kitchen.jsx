@@ -24,6 +24,14 @@ const Kitchen = () => {
 
     // console.log(ordersKitchen);
 
+        // Eliminar una orden
+        const deleteItem = (element) => {
+            const exist = ordersKitchen.find((order) => order.id === element.id);
+            if (exist.id) {
+                setOrdersKitchen(ordersKitchen.filter((item) => item.id !== element.id));
+            }
+        }    
+
     const OrderKitchen = ordersKitchen.map(function (order) {
         console.log(order.table);
         return (
@@ -46,7 +54,7 @@ const Kitchen = () => {
                         </div>
                     )
                     )}
-                    <button className="btnOrderReady" >Listo</button>
+                    <button onClick={()=>deleteItem(order)} className="btnOrderReady" >Listo</button>
                 </div>
             </div>
         )
@@ -63,28 +71,5 @@ const Kitchen = () => {
     )
 }
 
-//  duplicado de prueba
-{/* <div className="orderKit" >
-    <div className="clientDataKit" >
-        <p className="clientKit" >Nombre Cliente</p>
-        <div className="tableContainerKit" >
-            <p className="textTableKit" >mesa</p>
-            <p className="numberTableKit" >100</p>
-        </div>
-    </div>
-    <div className="elementsOrderKit" >
-        <div className="itemsOrderKit" >
-            <div className="itemKitchen" >
-                <span>10</span>
-                <span>Hamburguesa simple</span>
-            </div>
-            <div className="itemKitchen" >
-                <span>10</span>
-                <span>Hamburguesa simple</span>
-            </div>
-        </div>
-        <button className="btnOrderReady" >Listo</button>
-    </div>
-</div> */}
 export default Kitchen;
 
