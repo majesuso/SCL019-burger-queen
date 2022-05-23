@@ -2,7 +2,7 @@
 
 ***
 
-<!-- [Ingresa a Burger Queen](src/index.html) -->
+[Ingresa a Burger Queen](https://burgerqueen-majesuso.netlify.app/)
 
 Burger Queen es un aplicación pensada para un restaurante de comida rápida. 
 
