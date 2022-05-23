@@ -12,6 +12,7 @@ Permitiendo al mesero tomar un pedido de manera mucho más rápida y efectiva y 
 
 Esta aplicación posee características técnicas como ser Single Page Application (SPA), manejar una base de datos con Firebase y Firestore; y también utilizar el framework de React y React Router. 
 
+<img src="src/graphic-resources/imagesReadme/mockupBurgerQueen.png" width="100%" >
 <!-- ![out](https://user-images.githubusercontent.com/110297/45984241-b8b51c00-c025-11e8-8fa4-a390016bee9d.gif) -->
 
 
