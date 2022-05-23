@@ -61,3 +61,9 @@
     height: auto;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .headerBQ {
+    width: 85vh;
+  }
+}
