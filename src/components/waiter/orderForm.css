@@ -46,6 +46,7 @@
     flex-direction: row;
     align-items: center;
     line-height: 40px;
+    width: 35vh;
   }
 
   /* nombre item */
@@ -128,5 +129,8 @@
   @media screen and (max-width: 735px) {
     .orderForm {
       gap: 20px;
+  }
+  .itemAdded{
+    width: 36vh;
   }
   }
