@@ -15,7 +15,7 @@ const Kitchen = () => {
 
     useEffect(() => {
         const ordersCollection = collection(db, "orders");
-        const q = query(ordersCollection, orderBy("created", "desc"));
+        const q = query(ordersCollection, orderBy("created", "asc"));
         const getOrders = onSnapshot(q, (snapshot) =>
             setOrdersKitchen(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
         );
